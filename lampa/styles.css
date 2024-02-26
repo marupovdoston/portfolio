@@ -1,0 +1,102 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.container {
+  position: relative;
+  width: 220px;
+  height: 220px;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(2.1);
+  }
+  50% {
+    transform: scale(2.5);
+  }
+  100% {
+    transform: scale(2.1);
+  }
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
+  width: 120px;
+  height: 110px;
+  position: relative;
+  animation: heartbeat 0.8s infinite;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 70px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50px 50px 0 0;
+  box-shadow: 0 0 15px 0px red;
+}
+
+.heart:before {
+  left: 69px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.line-1{
+  width: 10px;
+  height: 103px;
+  transform: rotate(50deg);
+  background-color: white;
+  position: relative;
+  left: 77px;
+  bottom: 10px;
+  z-index: 1;
+  border-radius: 3px 5px 0 0;
+  border-right: 1px solid black;
+}
+
+.line-2{
+  width: 10px;
+  height: 103px;
+  transform: rotate(50deg);
+  background-color: white;
+  position: relative;
+  left: 70px;
+  bottom: 120px;
+  z-index: 1;
+  border-radius: 5px 3px 0 0;
+  border-right: 1px solid black;
+}
+.line-3{
+  width: 10px;
+  height: 103px;
+  transform: rotate(50deg);
+  background-color: white;
+  position: relative;
+  left: 84px;
+  bottom: 206px;
+  z-index: 1;
+  border-radius: 3px 5px 0 0;
+}
