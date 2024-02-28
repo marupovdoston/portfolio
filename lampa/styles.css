@@ -91,12 +91,14 @@ body, html {
 }
 .line-3{
   width: 10px;
-  height: 103px;
+  height: 100px;
   transform: rotate(50deg);
   background-color: white;
   position: relative;
   left: 84px;
-  bottom: 206px;
+  bottom: 206.50px;
   z-index: 1;
   border-radius: 3px 5px 0 0;
+  border-right: 1px solid black;
+  border-left: spx solid black;
 }
